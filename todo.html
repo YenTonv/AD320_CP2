@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+  Name: Yen Ton
+  Date: October 25, 2023
+  This is the todo.html page for my portfolio of web development work.
+  It includes links to my resume and about.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Yen Ton's Todo</title>
+</head>
+<body>
+    <nav>
+    <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="#todo">To-Do List</a></li>
+        </ul>
+    </nav>
+
+    <section class="todo-section">
+        <header>
+          <h1>Yen Ton<h1>
+        </header>
+
+        <h2>To-Do List</h2>
+        <input type="text" id="task-input" placeholder="Add a task">
+        
+        <!-- Dropdown select for task priority -->
+        <select id="task-priority">
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+        
+        <button id="add-button">Add</button>
+    </section>
+
+    <!-- Three columns for tasks based on priorities -->
+    <section class="priority-column">
+        <h3>High Priority</h3>
+        <ul id="task-list-high">
+            <!-- High-priority tasks will be added here -->
+        </ul>
+    </section>
+    
+    <section class="priority-column">
+        <h3>Medium Priority</h3>
+        <ul id="task-list-medium">
+            <!-- Medium-priority tasks will be added here -->
+        </ul>
+    </section>
+    
+    <section class="priority-column">
+        <h3>Low Priority</h3>
+        <ul id="task-list-low">
+            <!-- Low-priority tasks will be added here -->
+        </ul>
+    </section>
+
+    <script src="todo.js"></script>
+</body>
+</html>
